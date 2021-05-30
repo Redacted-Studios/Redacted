@@ -1,0 +1,11 @@
+# File types to ignore.
+*.exe
+*.app
+*.out
+*.a
+*.lib
+*.dll
+*.temp
+
+# Other.
+
