@@ -1,0 +1,43 @@
+{
+	"folders":
+	[
+		{
+			"path": "."
+		}
+	],
+
+	"build_systems":
+  	[
+
+  		{
+      		"name": "go install",
+      		"working_dir": "${project_path:${folder}}",
+      		"shell_cmd": "go install"
+    	},
+
+  		{
+      		"name": "go build",
+      		"working_dir": "${project_path:${folder}}",
+      		"shell_cmd": "go build -o \"../bin/main.exe\""
+    	},
+
+    	{
+      		"name": "go build release",
+      		"working_dir": "${project_path:${folder}}",
+      		"shell_cmd": "go build -ldflags \"-s -w -H=windowsgui\" -o \"../bin/main.exe\""
+    	},
+
+    	{
+      		"name": "go build and execute",
+      		"working_dir": "${project_path:${folder}}",
+      		"shell_cmd": "go build -o \"../bin/main.exe\" && cd ../bin/ && main.exe"
+    	},
+
+    	{
+      		"name": "execute",
+      		"working_dir": "${project_path:${folder}}/../bin",
+      		"shell_cmd": "main.exe"
+    	}
+
+	]
+}

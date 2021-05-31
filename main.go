@@ -6,16 +6,24 @@
 package main
 
 import (
-	"fmt"
-	"github.com/redacted-studios/redacted/window"
-
-	_ "github.com/go-gl/gl/v4.5-core/gl"
-	_ "github.com/go-gl/glfw/v3.3/glfw"
+	"os"
+	"redacted/rwindow"
 )
 
 func main() {
 
-	win := window.RWindow{Caption: "Window - Modules"}
+	// err : Error variable.
+	var err error
 
-	fmt.Println("Hello Redacted Engine:", win.Caption)
+	// Open a new glfw window.
+	err = rwindow.Window.Open()
+	if err != nil {panic(err)}
+
+	// Close the glfw window.
+	err = rwindow.Window.Close()
+	if err != nil {panic(err)}
+
+	// Exit the application.
+	os.Exit(0)
+
 }
