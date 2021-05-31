@@ -1,13 +1,13 @@
 // ---------- Copyright 2021, Redacted Studios, All rights reserved. ---------- \\
 // new.go                                                                       \\
-// create a new rwindow instance.                                               \\
+// create a new rglfw instance.                                                 \\
 // ---------------------------------------------------------------------------- \\
 
-package rwindow
+package rglfw
 
-// New : Create a new RWindow instance.
-func New() RWindow {
+// New : Create a new RGLFW instance.
+func New() RGLFW {
 
-	return RWindow{Initialized: false}
+	return RGLFW{Initialized: false}
 
 }

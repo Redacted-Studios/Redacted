@@ -1,13 +1,13 @@
 // ---------- Copyright 2021, Redacted Studios, All rights reserved. ---------- \\
 // new.go                                                                       \\
-// create a new rwindow instance.                                               \\
+// create a new ropengl instance.                                               \\
 // ---------------------------------------------------------------------------- \\
 
-package rwindow
+package ropengl
 
-// New : Create a new RWindow instance.
-func New() RWindow {
+// New : Create a new ROpenGL instance.
+func New() ROpenGL {
 
-	return RWindow{Initialized: false}
+	return ROpenGL{Initialized: false}
 
 }

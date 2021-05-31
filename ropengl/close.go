@@ -1,11 +1,11 @@
 // ---------- Copyright 2021, Redacted Studios, All rights reserved. ---------- \\
 // close.go                                                                     \\
-// close the rwindow instance.                                                  \\
+// close the ropengl instance.                                                  \\
 // ---------------------------------------------------------------------------- \\
 
-package rwindow
+package ropengl
 
-// Close : Terminate the RWindow Instance.
+// Close : Terminate the ROpenGL Instance.
 func Close() error {
 
 	// No error occurred.

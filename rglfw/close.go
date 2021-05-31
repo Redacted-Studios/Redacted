@@ -1,11 +1,11 @@
 // ---------- Copyright 2021, Redacted Studios, All rights reserved. ---------- \\
 // close.go                                                                     \\
-// close the rwindow instance.                                                  \\
+// close the rglfw instance.                                                    \\
 // ---------------------------------------------------------------------------- \\
 
-package rwindow
+package rglfw
 
-// Close : Terminate the RWindow Instance.
+// Close : Terminate the RGLFW Instance.
 func Close() error {
 
 	// No error occurred.
