@@ -8,9 +8,11 @@ package main
 import (
 	"os"
 	"fmt"
-	"redacted/rwindow"
-	"redacted/ropengl"
+	
 	"redacted/rglfw"
+	"redacted/rwindow"
+	"redacted/rengine"
+	"redacted/ropengl"
 
 	"github.com/go-gl/glfw/v3.3/glfw"
 	"github.com/go-gl/gl/v4.5-core/gl"
@@ -21,18 +23,12 @@ func main() {
 	// err : Error variable.
 	var err error
 
-	// Init glfw.
-	err = rglfw.Open()
+	// Initialize the Redacted Engine.
+	err = rengine.Open()
 	if err != nil {panic(err)}
 
-	// Open a new glfw window.
-	err = rwindow.Open()
-	if err != nil {panic(err)}
-
-	// Temp - Initialzize opengl.
-	err = ropengl.Open()
-	if err != nil {panic(err)}
-
+	// Log version information.
+	fmt.Println("Redacted Engine Version:", rengine.Engine.Version)
 	fmt.Println("OpenGL Version:", ropengl.OpenGL.Version)
 	fmt.Println("GLFW Version:", rglfw.GLFW.Version)
 
@@ -50,8 +46,8 @@ func main() {
 
 	}
 
-	// Close the glfw window.
-	err = rwindow.Close()
+	// Terminate the Redacted Engine.
+	err = rengine.Close()
 	if err != nil {panic(err)}
 
 	// Exit the application.

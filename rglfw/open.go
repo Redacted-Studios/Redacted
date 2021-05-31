@@ -22,7 +22,6 @@ func Open() error {
 	if err != nil {return err}
 
 	// Set the RGLFW's version.
-	// GLFW.Version = gl.GoStr(gl.GetString(gl.VERSION))
 	GLFW.Version = glfw.GetVersionString()
 
 	// Set the RGLFW's initialization state to true.
