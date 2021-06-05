@@ -13,6 +13,7 @@ import (
 	"redacted/rwindow"
 	"redacted/rengine"
 	"redacted/ropengl"
+	"redacted/rpython"
 
 	"github.com/go-gl/glfw/v3.3/glfw"
 	"github.com/go-gl/gl/v4.5-core/gl"
@@ -22,6 +23,9 @@ func main() {
 
 	// err : Error variable.
 	var err error
+
+	// Python | C | Test.
+	rpython.Test()
 
 	// Initialize the Redacted Engine.
 	err = rengine.Open()
@@ -35,6 +39,7 @@ func main() {
 	// Application main loop.
 	for !rwindow.Window.Window.ShouldClose() {
 
+		// Fill color.
 		gl.ClearColor(0, 0.5, 1.0, 1.0)
 
 		// Clear the GL_COLOR_BUFFER_BIT & GL_DEPTH_BUFFER_BIT.

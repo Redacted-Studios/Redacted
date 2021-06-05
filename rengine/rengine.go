@@ -11,5 +11,5 @@ var Engine REngine
 // REngine : Redacted Engine Core.
 type REngine struct {
 	Version 	string 	// Version : REngine version used.
-	Initialized bool	// initialized : REngine's initialization state.
+	Initialized bool	// Initialized : REngine's initialization state.
 }

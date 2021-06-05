@@ -1,6 +1,6 @@
 // ---------- Copyright 2021, Redacted Studios, All rights reserved. ---------- \\
-// rengine.go                                                                   \\
-// manage the redacted engine core.                                             \\
+// open.go                                                                      \\
+// initialize the redacted engine.                                              \\
 // ---------------------------------------------------------------------------- \\
 
 package rengine
